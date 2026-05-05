@@ -1,0 +1,15 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin before_circle {
+  &::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: $main-color;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    border-radius: 100%;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,35 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.promo {
+  position: relative;
+  min-height: 100vh;
+  background: url("../../img/main_bg.jpg") no-repeat center / cover;
+  padding-top: 205px;
+  &__title {
+    width: 532px;
+    height: 129px;
+    margin-top: 10px;
+  }
+  &__subtitle {
+    position: relative;
+    padding-left: 10px;
+    z-index: 1;
+    @include before_circle;
+  }
+  &__btns {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 255px;
+  }
+  &__link {
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+}
