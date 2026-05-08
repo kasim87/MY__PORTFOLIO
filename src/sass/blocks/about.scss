@@ -17,12 +17,13 @@
   }
   &__descr {
     .divider {
-      margin-top: 0;
+      margin: 15px 0 0 0;
     }
   }
   &__title {
     @include before_circle;
     padding-left: 15px;
+    margin-bottom: 25px;
   }
   &__text {
     margin-top: 20px;

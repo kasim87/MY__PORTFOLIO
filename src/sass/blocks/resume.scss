@@ -1,0 +1,92 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.resume {
+  padding-top: 120px;
+  &__title {
+    text-align: center;
+    @include before_circle;
+    &::before {
+      top: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    margin-top: 10px;
+  }
+  &__wrapper {
+    padding: 60px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 430px);
+    column-gap: 135px;
+  }
+  &__col {
+    &-title {
+      padding-left: 35px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -7px;
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        border-radius: 100%;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &::after {
+          content: "";
+          width: 1px;
+          height: calc(100% + 16px);
+          background: #000;
+          position: absolute;
+          top: -7px;
+          left: 0;
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 65px;
+      width: 50px;
+      height: 1px;
+      background-color: #000;
+    }
+    &-head {
+      position: relative;
+      padding: 45px 0 0 100px;
+    }
+    &-icon {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      @include before_circle;
+      img {
+        padding: 14px 0 0 17px;
+      }
+    }
+    &-location {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    &-text {
+      padding-left: 45px;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+}
