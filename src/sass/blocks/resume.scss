@@ -6,11 +6,7 @@
   &__title {
     text-align: center;
     @include before_circle;
-    &::before {
-      top: -7px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    @include before_circle-center;
   }
   &__subtitle {
     text-align: center;

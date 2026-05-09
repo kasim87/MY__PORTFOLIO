@@ -1,0 +1,72 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.skills {
+  padding-top: 123px;
+  &__title {
+    text-align: center;
+    @include before_circle;
+    @include before_circle-center;
+  }
+  &__subtitle {
+    text-align: center;
+    margin-top: 15px;
+  }
+  &__wrapper {
+    padding: 60px 10px 0 60px;
+    display: grid;
+    grid-template: repeat(2, 270px) / repeat(4, 270px);
+    grid-auto-rows: minmax(270px, auto);
+    gap: 15px;
+  }
+  &__item {
+    padding: 30px 30px 25px 30px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    &-img {
+      display: flex;
+      align-items: center;
+      min-height: 65px;
+    }
+    h3 {
+      margin-top: 20px;
+    }
+    &-text {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__ratings {
+    padding-top: 120px;
+    display: grid;
+    grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+    gap: 30px 45px;
+    &-item {
+      display: grid;
+      grid-template: minmax(21px, auto) 14px / 200px 35px;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    &-title {
+      padding-top: 3px;
+      padding-left: 15px;
+      @include before_circle;
+    }
+    &-counter {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &-line {
+      width: 350px;
+      height: 14px;
+      background: rgba(232, 228, 222, 1);
+      border-radius: 4px;
+      span {
+        display: block;
+        height: 100%;
+        background: $main-color;
+        border-radius: 4px;
+      }
+    }
+  }
+}

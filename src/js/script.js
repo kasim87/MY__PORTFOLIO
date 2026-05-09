@@ -11,3 +11,10 @@ burger.addEventListener("click", () => {
 close.addEventListener("click", () => {
   menu.classList.remove("active");
 });
+
+const count = document.querySelectorAll(".skills__ratings-counter"),
+  lines = document.querySelectorAll(".skills__ratings-line span");
+
+count.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});

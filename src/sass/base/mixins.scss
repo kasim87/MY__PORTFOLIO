@@ -13,3 +13,11 @@
     z-index: -1;
   }
 }
+
+@mixin before_circle-center {
+  &::before {
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
