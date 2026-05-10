@@ -1,3 +1,5 @@
+@use "/src/sass/base/mixins.scss" as *;
+
 .title {
   position: relative;
   font-weight: 700;
@@ -18,5 +20,14 @@
   }
   &_fz48 {
     font-size: 48px;
+  }
+  &__sect-title {
+    text-align: center;
+    @include before_circle;
+    @include before_circle-center;
+  }
+  &__sect-subt {
+    text-align: center;
+    margin-top: 15px;
   }
 }
