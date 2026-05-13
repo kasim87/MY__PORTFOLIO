@@ -1,0 +1,133 @@
+@media screen and (max-width: 1440px) {
+  .sidepanel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo {
+    padding-top: 100px;
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 400px 520px;
+      gap: 20px 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .title {
+    &_fz36 {
+      font-size: 30px;
+    }
+  }
+  .about {
+    padding-top: 50px;
+    &__wrapper {
+      grid-template-columns: 300px 350px;
+      gap: 40px;
+    }
+    &__skills {
+      grid-template-columns: 350px;
+      grid-auto-rows: minmax(115px, aute);
+      &-item {
+        grid-template-columns: 30px 300px;
+        column-gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .title {
+    font-size: 28px;
+    &_fz16 {
+      font-size: 16px;
+    }
+  }
+  .promo {
+    &__title {
+      width: 300px;
+      line-height: 39px;
+    }
+  }
+  .about {
+    padding-top: 20px;
+    &__wrapper {
+      grid-template: 400px auto auto / auto;
+      row-gap: 45px;
+    }
+    &__photo {
+      grid-row: unset;
+    }
+    &__skills {
+      grid-template-columns: repeat(2, 250px);
+      gap: 20px;
+      &-item {
+        grid-template-columns: 20px 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .title {
+    &__fz14 {
+      font-size: 14px;
+    }
+    &_fz48 {
+      font-size: 26px;
+    }
+    &_fz36 {
+      font-size: 24px;
+    }
+  }
+  .menu {
+    &__block {
+      padding-top: 50px;
+    }
+    &__social {
+      bottom: 20px;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .burger {
+    right: 20px;
+  }
+  .promo {
+    background: url("../../img/main_bg.jpg") no-repeat 87% / cover;
+    &__btns {
+      margin-top: 0;
+    }
+  }
+  .about {
+    padding-top: 30px;
+    &__wrapper {
+      grid-template: 340px auto auto / auto;
+    }
+    &__skills {
+      margin-left: 15px;
+      grid-template-columns: auto;
+      &-item {
+        grid-template-columns: 30px 250px;
+      }
+    }
+  }
+}
