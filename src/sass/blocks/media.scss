@@ -13,8 +13,26 @@
   }
   .about {
     &__wrapper {
-      grid-template-columns: 400px 520px;
+      grid-template-columns: 400px 500px;
       gap: 20px 50px;
+    }
+    &__skills {
+      gap: 20px;
+      &-item {
+        grid-template-columns: 30px 190px;
+      }
+    }
+  }
+  .resume {
+    .title_fz14 {
+      font-size: 20px;
+    }
+    &__wrapper {
+      padding-left: 0;
+      column-gap: 70px;
+    }
+    &__item-text {
+      font-size: 15px;
     }
   }
 }
@@ -41,6 +59,19 @@
         grid-template-columns: 30px 300px;
         column-gap: 20px;
       }
+    }
+  }
+  .resume {
+    .title_fz14 {
+      font-size: 12px;
+    }
+    &__wrapper {
+      padding-left: 0;
+      grid-template-columns: repeat(2, 330px);
+      column-gap: 30px;
+    }
+    &__item-text {
+      font-size: 12px;
     }
   }
 }
@@ -76,6 +107,14 @@
       &-item {
         grid-template-columns: 20px 200px;
       }
+    }
+  }
+  .resume {
+    padding-top: 30px;
+    &__wrapper {
+      padding: 50px 0 0 0;
+      grid-template-columns: repeat(2, 230px);
+      column-gap: 20px;
     }
   }
 }
@@ -128,6 +167,14 @@
       &-item {
         grid-template-columns: 30px 250px;
       }
+    }
+  }
+  .resume {
+    padding-top: 50px;
+    &__wrapper {
+      padding-left: 20px;
+      grid-template-columns: 230px;
+      column-gap: 20px;
     }
   }
 }
