@@ -4,13 +4,13 @@
   padding-top: 60px;
   &__wrapper {
     margin-top: 60px;
-    display: flex;
+    display: grid;
+    grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px);
+    grid-auto-rows: minmax(45px, auto);
+    row-gap: 15px;
     justify-content: space-between;
   }
   &__item {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
     &-info {
       position: relative;
       display: grid;
