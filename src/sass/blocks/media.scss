@@ -117,6 +117,19 @@
       padding: 0;
     }
   }
+  .contact {
+    padding-top: 50px;
+    &__wrapper {
+      grid-template-columns: 300px 350px;
+    }
+    &__form {
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+    }
+    .btn {
+      line-height: 13px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -146,7 +159,6 @@
     }
     &__skills {
       grid-template-columns: repeat(2, 250px);
-      gap: 20px;
       &-item {
         grid-template-columns: 20px 200px;
       }
@@ -185,6 +197,21 @@
   .price {
     &__wrapper {
       justify-content: center;
+    }
+  }
+  .contact {
+    &__wrapper {
+      grid-template-columns: auto;
+    }
+    &__photo {
+      height: 350px;
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &__title {
+      margin-top: 30px;
     }
   }
 }
@@ -262,6 +289,27 @@
   .price {
     &__wrapper {
       grid-template-columns: 290px;
+    }
+  }
+  .contact {
+    &__wrapper {
+    }
+    &__photo {
+      display: none;
+    }
+    &__trigger {
+      margin-top: 20px;
+      grid-template-columns: auto;
+      justify-items: center;
+      row-gap: 20px;
+    }
+    &__policy {
+      width: 180px;
+    }
+    .btn {
+      order: 2;
+      width: 100%;
+      max-width: 220px;
     }
   }
 }
